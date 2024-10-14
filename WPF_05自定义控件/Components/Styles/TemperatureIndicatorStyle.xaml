@@ -3,4 +3,55 @@
     <Style x:Key="ButtonInResourceDictStyle" TargetType="Button">
         <Setter Property="Background" Value="Red" />
     </Style>
+
+    <!-- 温度文本 开始 -->
+    <Style x:Key="DefaultLabelTemperatureStyle" TargetType="Label">
+        <Setter Property="Width" Value="70" />
+        <Setter Property="HorizontalContentAlignment" Value="Right" />
+        <Setter Property="Content" Value="26" />
+        <Setter Property="FontFamily" Value="{StaticResource Dingding}" />
+        <Setter Property="FontSize" Value="24" />
+    </Style>
+
+    <Style x:Key="NormalTempLabelStyle" BasedOn="{StaticResource DefaultLabelTemperatureStyle}" TargetType="Label">
+        <Setter Property="Foreground" Value="#FF07E85D" />
+    </Style>
+    <Style x:Key="OverAlarmTempLabelStyle" BasedOn="{StaticResource DefaultLabelTemperatureStyle}" TargetType="Label">
+        <Setter Property="Foreground" Value="#FFF7372B" />
+    </Style>
+    <Style x:Key="UnderAlarmTempLabelStyle" BasedOn="{StaticResource DefaultLabelTemperatureStyle}" TargetType="Label">
+        <Setter Property="Foreground" Value="#FF4AE3FF" />
+    </Style>
+    <!-- 温度文本 结束 -->
+
+    <!-- 指示灯 开始 -->
+    <Style x:Key="DefaultEllipseIndicatorStyle" TargetType="Ellipse">
+        <Setter Property="Width" Value="25" />
+        <Setter Property="Height" Value="25" />
+        <Setter Property="Stroke" Value="#CFE2F2" />
+        <Setter Property="StrokeThickness" Value="2" />
+    </Style>
+
+    <Style x:Key="NormalTempEllipseStyle" BasedOn="{StaticResource DefaultEllipseIndicatorStyle}" TargetType="Ellipse">
+        <Setter Property="Fill">
+            <Setter.Value>
+                <LinearGradientBrush>
+                    <GradientStop Offset="1" Color="#BDD7EE" />
+                    <GradientStop Offset="0.5" Color="#FF07E85D" />
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="AlarmTempEllipseStyle" BasedOn="{StaticResource DefaultEllipseIndicatorStyle}" TargetType="Ellipse">
+        <Setter Property="Fill">
+            <Setter.Value>
+                <LinearGradientBrush>
+                    <GradientStop Offset="1" Color="#BDD7EE" />
+                    <GradientStop Offset="0.5" Color="#FFF7372B" />
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!-- 指示灯 结束 -->
 </ResourceDictionary>
