@@ -49,7 +49,7 @@
                             Value="{Binding Temperature}" />
 
             <StackPanel Grid.Column="1" Margin="10">
-                <uc:TemperatureIndicator AlarmMinimum="{Binding MinimumTemperature}" Value="{Binding Temperature, Mode=TwoWay}" />
+                <uc:TemperatureIndicator AlarmMaximum="{Binding MaximumTemperature}" AlarmMinimum="{Binding MinimumTemperature}" Value="{Binding Temperature, Mode=TwoWay}" />
 
                 <uc:ControlPanel Maximum="{Binding MaximumTemperature, Mode=TwoWay}" Minimum="{Binding MinimumTemperature, Mode=TwoWay}" Value="{Binding Temperature, Mode=TwoWay}" />
             </StackPanel>
