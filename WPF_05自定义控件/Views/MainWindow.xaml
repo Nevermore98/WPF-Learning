@@ -1,8 +1,8 @@
-﻿<Window x:Class="WPF_05自定义控件.MainWindow"
+﻿<Window x:Class="WPF_05自定义控件.Views.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:local="clr-namespace:WPF_05自定义控件"
+        xmlns:local="clr-namespace:WPF_05自定义控件.Views"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:uc="clr-namespace:WPF_05自定义控件.Components"
         Title="MainWindow"
@@ -10,12 +10,12 @@
         Height="600"
         d:DataContext="{d:DesignInstance local:MainWindow,
                                          IsDesignTimeCreatable=True}"
+        FontFamily="{StaticResource Dingding}"
         mc:Ignorable="d">
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <!-- 可以在全局引入共用的样式 -->
-                <!--<ResourceDictionary Source="/WPF_05自定义控件;component/Styles/OverrideControlStyle.xaml" />-->
+                <ResourceDictionary Source="./Styles/MainWindowStyle.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
@@ -43,12 +43,15 @@
                 <ColumnDefinition Width="0.5*" />
             </Grid.ColumnDefinitions>
 
-            <uc:Thermometer Grid.Column="0" Value="10" />
+            <uc:Thermometer Grid.Column="0"
+                            Maximum="{Binding MaximumTemperature}"
+                            Minimum="{Binding MinimumTemperature}"
+                            Value="{Binding Temperature}" />
 
-            <StackPanel Grid.Column="1">
-                <uc:TemperatureIndicator Value="{Binding Temperature}" />
+            <StackPanel Grid.Column="1" Margin="10">
+                <uc:TemperatureIndicator AlarmMinimum="{Binding MinimumTemperature}" Value="{Binding Temperature, Mode=TwoWay}" />
 
-                <TextBox Style="{StaticResource CustomTextBoxStyle}" Text="{Binding Temperature, UpdateSourceTrigger=PropertyChanged}" />
+                <uc:ControlPanel Maximum="{Binding MaximumTemperature, Mode=TwoWay}" Minimum="{Binding MinimumTemperature, Mode=TwoWay}" Value="{Binding Temperature, Mode=TwoWay}" />
             </StackPanel>
         </Grid>
     </Grid>

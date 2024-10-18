@@ -9,6 +9,7 @@ namespace WPF_05自定义控件
     /// </summary>
     public partial class App : Application
     {
+
     }
 
 }

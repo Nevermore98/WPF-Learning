@@ -10,12 +10,14 @@
     <UserControl.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/Components/Styles/TemperatureIndicatorStyle.xaml" />
+                <ResourceDictionary Source="./Styles/TemperatureIndicatorStyle.xaml" />
             </ResourceDictionary.MergedDictionaries>
 
             <Style x:Key="ButtonInXamlStyle" TargetType="Button">
                 <Setter Property="Background" Value="Blue" />
             </Style>
+
+
         </ResourceDictionary>
     </UserControl.Resources>
 
@@ -33,7 +35,10 @@
             <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
                 <Ellipse x:Name="ellipseIndicator" Style="{StaticResource DefaultEllipseIndicatorStyle}" />
 
-                <Label x:Name="labelTemperature" Style="{StaticResource DefaultLabelTemperatureStyle}" />
+                <Label x:Name="labelTemperature"
+                       d:Content="26"
+                       Content="{Binding Value, RelativeSource={RelativeSource AncestorType=local:TemperatureIndicator}, UpdateSourceTrigger=PropertyChanged}"
+                       Style="{StaticResource DefaultLabelTemperatureStyle}" />
                 <Label Content="℃" FontFamily="{StaticResource Dingding}" FontSize="24" />
             </StackPanel>
         </Grid>

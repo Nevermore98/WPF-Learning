@@ -1,21 +1,26 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <Style x:Key="CustomTextBoxStyle" TargetType="TextBox">
-        <Setter Property="FontFamily" Value="Arial" />
-        <Setter Property="FontSize" Value="12" />
+        <Setter Property="FontSize" Value="20" />
         <Setter Property="Foreground" Value="Gray" />
         <Setter Property="Width" Value="100" />
-        <Setter Property="Height" Value="18" />
+
+        <Setter Property="Height" Value="30" />
         <Setter Property="HorizontalContentAlignment" Value="Center" />
         <Setter Property="VerticalContentAlignment" Value="Center" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="TextBox">
-                    <Border Background="Red"
+
+                    <Border Background="White"
                             BorderBrush="#CFE2F2"
                             BorderThickness="2"
                             CornerRadius="8">
-                        <ScrollViewer x:Name="PART_ContentHost" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+                        <!-- 输入区域与 TextBox 同宽 -->
+                        <ScrollViewer x:Name="PART_ContentHost"
+                                      Width="{TemplateBinding Width}"
+                                      HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
                     </Border>
                 </ControlTemplate>
             </Setter.Value>
