@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF_01入门基础", "01入门基础\WPF_01入门基础.csproj", "{F30E9AC2-E7A3-4C6A-A220-E7B1D9154E43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF_01入门基础", "WPF_01入门基础\WPF_01入门基础.csproj", "{F30E9AC2-E7A3-4C6A-A220-E7B1D9154E43}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF_02依赖属性", "WPF_02依赖属性\WPF_02依赖属性.csproj", "{D55BFE9E-1B63-4062-AC5A-177A773290B1}"
 EndProject
@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF_03资源字典", "WPF_0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF_04绑定", "WPF_04绑定\WPF_04绑定.csproj", "{34911E7A-2841-4C12-90CF-CB4AA677DFF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_05自定义控件", "WPF_05自定义控件\WPF_05自定义控件.csproj", "{C2E4B219-9990-4C91-9077-62C96B39F3DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF_05自定义控件", "WPF_05自定义控件\WPF_05自定义控件.csproj", "{C2E4B219-9990-4C91-9077-62C96B39F3DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
