@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF_03资源字典", "WPF_0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF_04绑定", "WPF_04绑定\WPF_04绑定.csproj", "{34911E7A-2841-4C12-90CF-CB4AA677DFF2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF_05自定义控件", "WPF_05自定义控件\WPF_05自定义控件.csproj", "{C2E4B219-9990-4C91-9077-62C96B39F3DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF_05自定义控件与用户控件", "WPF_05自定义控件与用户控件\WPF_05自定义控件与用户控件.csproj", "{C2E4B219-9990-4C91-9077-62C96B39F3DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

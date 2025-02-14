@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace WPF_05自定义控件
+namespace WPF_05自定义控件与用户控件
 {
     /// <summary>
     /// Interaction logic for App.xaml

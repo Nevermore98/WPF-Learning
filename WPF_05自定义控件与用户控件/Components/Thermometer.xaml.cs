@@ -4,7 +4,7 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 
-namespace WPF_05自定义控件.Components
+namespace WPF_05自定义控件与用户控件.Components
 {
     /// <summary>
     /// Thermometer.xaml 的交互逻辑

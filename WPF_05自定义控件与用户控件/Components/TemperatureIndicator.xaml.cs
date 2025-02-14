@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 
-namespace WPF_05自定义控件.Components
+namespace WPF_05自定义控件与用户控件.Components
 {
     /// <summary>
     /// TemperatureIndicator.xaml 的交互逻辑

@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Windows.Input;
 
-namespace WPF_05自定义控件.Views
+namespace WPF_05自定义控件与用户控件.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

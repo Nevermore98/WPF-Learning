@@ -1,7 +1,0 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <ResourceDictionary.MergedDictionaries>
-        <!-- 需要写全 pack://application:,,,/WPF_05自定义控件;component，否则使用控件会有波浪线但不影响编译 -->
-        <ResourceDictionary Source="pack://application:,,,/WPF_05自定义控件;component/Themes/IconButtonStyle.xaml" />
-    </ResourceDictionary.MergedDictionaries>
-</ResourceDictionary>

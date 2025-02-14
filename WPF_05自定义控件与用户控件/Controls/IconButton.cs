@@ -4,7 +4,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Shapes;
 
-namespace WPF_05自定义控件.Controls
+namespace WPF_05自定义控件与用户控件.Controls
 {
     public class IconButton : Button
     {
