@@ -8,6 +8,7 @@ namespace WPF_05自定义控件.Components
     /// </summary>
     public partial class ControlPanel : UserControl
     {
+        // 控制面板
         public ControlPanel()
         {
             InitializeComponent();

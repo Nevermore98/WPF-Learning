@@ -54,5 +54,12 @@ namespace WPF_05自定义控件.Views
             InitializeComponent();
             DataContext = this;
         }
+
+        private void CloseButton_CustomClick(object sender, RoutedEventArgs e)
+        {
+            var messageBoxResult = MessageBox.Show("是否确认关闭应用？", "关闭应用", MessageBoxButton.YesNo);
+            if (messageBoxResult == MessageBoxResult.Yes) Close();
+
+        }
     }
 }

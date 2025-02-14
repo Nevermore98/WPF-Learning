@@ -33,12 +33,12 @@
             </Grid.RowDefinitions>
 
             <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
-                <Ellipse x:Name="ellipseIndicator" Style="{StaticResource DefaultEllipseIndicatorStyle}" />
+                <Ellipse x:Name="ellipseIndicator" Style="{StaticResource BaseEllipseIndicatorStyle}" />
 
                 <Label x:Name="labelTemperature"
                        d:Content="26"
                        Content="{Binding Value, RelativeSource={RelativeSource AncestorType=local:TemperatureIndicator}, UpdateSourceTrigger=PropertyChanged}"
-                       Style="{StaticResource DefaultLabelTemperatureStyle}" />
+                       Style="{StaticResource BaseLabelTemperatureStyle}" />
                 <Label Content="℃" FontFamily="{StaticResource Dingding}" FontSize="24" />
             </StackPanel>
         </Grid>

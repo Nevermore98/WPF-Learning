@@ -9,7 +9,10 @@
             <ResourceDictionary.MergedDictionaries>
                 <!-- 可省略开头的 pack://application:,,,/YourProjectName;component -->
                 <ResourceDictionary Source="/Resources/AppStyles/FontStyle.xaml" />
-                <ResourceDictionary Source="/Resources/AppStyles/OverrideControlStyle.xaml" />
+                <ResourceDictionary Source="/Themes/Generic.xaml" />
+                <ResourceDictionary Source="/Resources/Icons.xaml" />
+
+                <ResourceDictionary Source="/Resources/AppStyles/OverrideDefaultStyle.xaml" />
 
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
