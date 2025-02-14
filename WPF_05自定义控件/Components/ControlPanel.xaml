@@ -19,15 +19,15 @@
         <StackPanel>
             <WrapPanel>
                 <Label Content="警报最大值" Style="{StaticResource TitleLabelStyle}" />
-                <TextBox Style="{StaticResource CustomTextBoxStyle}" Text="{Binding Maximum, RelativeSource={RelativeSource AncestorType=local:ControlPanel}, UpdateSourceTrigger=PropertyChanged}" />
+                <TextBox MouseWheel="AlarmMax_MouseWheel" Style="{StaticResource CustomTextBoxStyle}" Text="{Binding Maximum, RelativeSource={RelativeSource AncestorType=local:ControlPanel}, UpdateSourceTrigger=PropertyChanged}" />
             </WrapPanel>
             <WrapPanel Margin="0,10,0,0">
                 <Label Content="警报最小值" Style="{StaticResource TitleLabelStyle}" />
-                <TextBox Style="{StaticResource CustomTextBoxStyle}" Text="{Binding Minimum, RelativeSource={RelativeSource AncestorType=local:ControlPanel}, UpdateSourceTrigger=PropertyChanged}" />
+                <TextBox MouseWheel="AlarmMin_MouseWheel" Style="{StaticResource CustomTextBoxStyle}" Text="{Binding Minimum, RelativeSource={RelativeSource AncestorType=local:ControlPanel}, UpdateSourceTrigger=PropertyChanged}" />
             </WrapPanel>
             <WrapPanel Margin="0,10,0,0">
                 <Label Content="当前温度" Style="{StaticResource TitleLabelStyle}" />
-                <TextBox Style="{StaticResource CustomTextBoxStyle}" Text="{Binding Value, RelativeSource={RelativeSource AncestorType=local:ControlPanel}, UpdateSourceTrigger=PropertyChanged}" />
+                <TextBox MouseWheel="CurrentTemp_MouseWheel" Style="{StaticResource CustomTextBoxStyle}" Text="{Binding Value, RelativeSource={RelativeSource AncestorType=local:ControlPanel}, UpdateSourceTrigger=PropertyChanged}" />
             </WrapPanel>
         </StackPanel>
     </Viewbox>
